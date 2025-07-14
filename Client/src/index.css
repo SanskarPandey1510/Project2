@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import "tailwindcss";
+*{
+  font-family: "Michroma", sans-serif;
+}
+html, body {
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* IE 10+ */
+  overflow: auto;                /* Ensure scrolling still works */
+}
+
+/* For WebKit-based browsers (Chrome, Safari, Edge Chromium) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  overflow-x: hidden;   /* disables horizontal scroll */
+}
+
+.sct{
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #8880 transparent;
+  
+
+}
+.sct::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sct::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sct::-webkit-scrollbar-thumb {
+  background-color: #888; /* Just the thumb */
+  border-radius: 4px;
+}
+/* global CSS */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+
+/* Chrome, Safari, Edge */
+.transparent-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.transparent-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.transparent-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* or transparent if you want */
+  border-radius: 10px;
+}
+
+/* Firefox */
+.transparent-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}
+
+/* Chrome, Edge, Safari (WebKit/Blink) */
+.only-slider::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.only-slider::-webkit-scrollbar-track {
+  background: transparent; /* hide track background */
+}
+
+.only-slider::-webkit-scrollbar-thumb {
+  background-color: rgba(90, 88, 88, 0.5); /* visible slider */
+  border-radius: 10px;
+}
+
+/* Firefox */
+.only-slider {
+  scrollbar-width: thin; /* show thin scrollbar */
+  scrollbar-color: rgba(121, 121, 121, 0.5) transparent; /* thumb color, transparent track */
+}
+
+
+
