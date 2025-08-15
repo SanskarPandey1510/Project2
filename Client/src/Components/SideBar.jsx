@@ -7,7 +7,7 @@ function SideBar({selectedUser,setSelectedUser}) {
     
 
   return (
-    <div className='overflow-y-auto h-[400px] only-slider'>
+    <div className={`overflow-y-scroll h-full only-slider ${selectedUser?"hidden md:block":"block"}`}>
 
         <div className=''>
             <div className='flex justify-between '>
@@ -49,7 +49,7 @@ function SideBar({selectedUser,setSelectedUser}) {
                     
                        
                     return <div key={index} onClick={()=>{
-                        console.log(user)
+                     
                         setSelectedUser(user);
                     }} className={`hover:bg-blue-950/50 flex pl-2 gap-3 py-3 cursor-pointer relative ${selectedUser?._id===user._id && "bg-blue-950/50" } `} >
                         <img src={user?.profilePic || assets.avatar_icon} alt=""  className='w-8 rounded-full'/>

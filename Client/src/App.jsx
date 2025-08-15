@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className=''>
 
-    <div className='bg-[url("./assets/Chatrr/bgImage.svg")] bg-contain ' >
+    <div className='bg-[url("./assets/Chatrr/bgImage.svg")] bg-cover ' >
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/login' element={<LoginPage/>}/>
